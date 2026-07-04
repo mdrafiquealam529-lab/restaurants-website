@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurants</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <h1>BD Restaurants</h1>
-  <p>welcome to our restaurant!</p>
+  <p id="welcome">welcome to our restaurant!</p>
   <hr>
 
   <nav>
@@ -21,7 +22,7 @@
     <a href="form.html">Form</a>
   </nav>
 
-  <section>
+  <section class="items">
     <h2>Items Names</h2>
     <ul>
       <li>Bargar</li>
@@ -30,33 +31,52 @@
     </ul>
   </section>
 
-  <section>
+  <section class="menu">
     <h2>Menu</h2>
-    <img src="photos/bargar.jpg.jpg.jpg" alt="Bargar" width="200" height="200">
-    <h2>Bargar</h2>
-    <p>Price: $10.99</p>
-    <button>Order Now</button>
+    <div class="card">
+      <span class="discount">20% OFF</span>
+      <img src="photos/bargar.jpg.jpg.jpg" alt="bargar" width="200" height="200">
+      <h2>Bargar</h2>
+      <p>
+        <del>10.99</del>
+      </p>
+      <span class="new-price">$8.79</span>
+
+      <button>Order Now</button>
+    </div>
     <br>
 
-    <img src="photos/chaicken.jpg" alt="chaicken" width="200" height="200">
-    <h2>Chaicken</h2>
-    <p>Price: $12.99</p>
-    <button>Order Now</button>
+    <div class="card">
+      <span class="discount">15% OFF</span>
+      <img src="photos/chaicken.jpg" alt="chaicken" width="200" height="200">
+      <h2>Chaicken</h2>
+      <p>
+        <del>12.99</del>
+      </p>
+      <span class="new-price">$11.04</span>
+      <button>Order Now</button>
+    </div>
     <br>
-    <img src="photos/pepsi.jpg" alt="pepsi" width="200" height="200">
-    <h2>pepsi</h2>
-    <p>Price: $2.99</p>
-    <button>Order Now</button>
+    <div class="card">
+      <span class="discount">30% OFF</span>
+      <img src="photos/pepsi.jpg" alt="pepsi" width="200" height="200">
+      <h2>Pepsi</h2>
+      <p>
+        <del>2.99</del>
+      </p>
+      <span class="new-price">$2.09</span>
+      <button>Order Now</button>
+    </div>
   </section>
 
-  <section>
+  <section class="about">
     <h2>About Us</h2>
     <p>Welcome to<strong>BD Restaurants!</strong> We are a family-owned business that has been serving the<em>community
         for over 10 years.</em> Our mission is to provide high-quality food and excellent service in a warm and
       welcoming environment.</p>
   </section>
 
-  <nav>
+  <section class="follow">
     <h2>Follow Us</h2>
 
     <a href="https://web.facebook.com/0Rafique" targe="_blank">
@@ -66,9 +86,9 @@
     <a href="https://github.com/mdrafiquealam529-lab/restaurants-website" targe="_blank">
       GitHub
     </a>
-  </nav>
+  </section>
 
-  <section>
+  <section class="contact">
     <h2>Contact Us</h2>
     <ul>
       <li>Name: Rafique Alam</li>
@@ -77,7 +97,7 @@
     </ul>
   </section>
 
-  <nav>
+  <section class="youtube">
     <h2>YouTube Videos</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/BIG1h2vG-Qg?si=6bc-yEhw6-EZli4-"
       title="YouTube video player" frameborder="0"
@@ -88,7 +108,7 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  </nav>
+  </section>
 
 
   <form>
