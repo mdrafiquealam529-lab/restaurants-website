@@ -19,7 +19,7 @@ h1 {
 
 #welcome {
   text-align: center;
-  color: rgb(84, 245, 30);
+  color: rgb(66, 246, 6);
 }
 
 nav {
@@ -82,4 +82,33 @@ nav a:hover {
 
 .card button:hover {
   background: darkred;
+}
+
+.bannar {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgreen;
+  align-items: center;
+  padding: 20px;
+}
+
+.bannar-content {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+}
+
+.bannar-img-container {
+  flex: 1;
+}
+
+.bannar-content button {
+  background-color: rgb(57, 252, 4);
+  padding: 8px;
+  margin: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bannar-content button:hover {
+  background-color: #f4f4f4;
 }
